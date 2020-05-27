@@ -7,7 +7,7 @@ The main theme has been invented by my son Olmo, during an
 improvisation section at home. It was a lot of fun!
 
 You can listen to the MIDI output of the song on
-(soundcloud)[https://soundcloud.com/francesco-petrogalli/the-rhino-run].
+[soundcloud](https://soundcloud.com/francesco-petrogalli/the-rhino-run).
 
 If you like this piece, feel free to [buy us a
 coffee](https://ko-fi.com/tubafranz).
