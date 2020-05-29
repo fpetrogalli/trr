@@ -1,3 +1,5 @@
+% Copyright 2020 - Francesco Petrogalli and Olmo Fiorenzo Petrogalli
+
 % This work is licensed under CC BY-SA 4.0. To view a copy of this
 % license, visit https://creativecommons.org/licenses/by-sa/4.0"}
 
@@ -11,6 +13,7 @@ Composer = \markup {"Composed by Olmo Fiorenzo Petrogalli and Francesco Petrogal
 Arranger = \markup {"Arranged by Francesco Petrogalli" "-" \with-url #"http://tubafranz.me" "tubafranz.me"}
 Copyright = \markup {
   \center-column {
+    \line { "Copyright © 2020 Francesco Petrogalli and Olmo Fiorenzo Petrogalli"}
     \line { "This work is licensed under CC BY-SA 4.0." }
     \line {
       "To view a copy of this license, visit"
