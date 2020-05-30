@@ -7,7 +7,7 @@
 
 Dedication = \markup {"Dedicated to" \with-url #"https://blowcomotion.org/" "Blowcomotion"}
 Title = \markup {"The Rhino Run"}
-Version = \markup {"v1.0"}
+Version = \markup {"v1.1"}
 Github = \markup {\with-url #"http://github.com/fpetrogalli/trr" "github.com/fpetrogalli/trr" "-" \Version}
 Composer = \markup {"Composed by Olmo Fiorenzo Petrogalli and Francesco Petrogalli"}
 Arranger = \markup {"Arranged by Francesco Petrogalli" "-" \with-url #"http://tubafranz.me" "tubafranz.me"}
