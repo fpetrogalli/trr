@@ -35,13 +35,10 @@ To build PDF and MIDI output:
 $> lilypond the-rhino-run.ly
 ```
 
-# Releases
+# Music sheets
 
-Here is where you can get the scores (pdf) of the composition.
-
-| Date | Version | Info |
-| ---- | ------- | ---- |
-| 2020/05/27 | [v1.0-beta](https://github.com/fpetrogalli/trr/releases/tag/v1.0-beta) | Initial release. |
+You can grab the PDFs of the music scores
+[here](https://github.com/fpetrogalli/trr/releases/latest).
 
 # Credits
 
