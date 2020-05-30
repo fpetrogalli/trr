@@ -516,22 +516,36 @@ trombone = \relative c {
 
 }
 
+tubaGrooveHead = \relative c, {
+  <<
+    { r4-"Tuba 2"      bes'8 r4     bes8  r4 aes8 des,4 ees8 }\\
+    { bes4\mf-"Tuba 1" r8    aes'4  r8    f4 r8   des4  ees8 }
+  >> |
+}
+
+tubaGroove = \relative c, {
+  <<
+    {r4       bes'8  r4     bes8  r4 aes8  des,4 ees8 }\\
+    {bes4\mf  r8     aes'4  r8    f4 r8    des4 ees8}
+  >> |
+}
+
 tuba = \relative c, {
   \global
   % Music follows here.
 
-  \repeat percent 4 {bes4\mf  bes'8 aes4 bes8 f4 aes8 des,4 ees8 |}
+  \repeat percent 4 \tubaGrooveHead
   %5
-  \repeat percent 8 {bes4\mf  bes'8 aes4 bes8 f4 aes8 des,4 ees8 |}
+  \repeat percent 8 \tubaGroove
   %13
-  \repeat percent 8 {bes4\mf  bes'8 aes4 bes8 f4 aes8 des,4 ees8 |}
+  \repeat percent 8 \tubaGroove
   % 21
   ees4 ees8 ees4 ees8 ees4 ees8   r8 r f~ |
   f8 r f ~ f r f~ f r f f4. |
   ges4 ges8 ges4 ges8 ges4 ges8  r8 r aes~ |
   aes8 r aes ~ aes r aes r4. r4. |
   %25
-  \repeat percent 8 {bes,4\mf  bes'8 aes4 bes8 f4 aes8 des,4 ees8 |}
+  \repeat percent 8 \tubaGroove
 
   % 33
   ees4 ees8 ees4 ees8 ees4 ees8   r8 r f~ |
@@ -580,9 +594,7 @@ tuba = \relative c, {
       r4. |
     }
   }
-  \repeat percent 8 {
-    bes,4  bes'8 aes4 bes8 f4 aes8 des,4 ees8 |
-  }
+  \repeat percent 8 \tubaGroove
 
   % 33
   ees4 ees8 ees4 ees8 ees4 ees8   r8 r f~ |
@@ -591,8 +603,14 @@ tuba = \relative c, {
   aes8 r aes ~ aes r aes r4. r4. |
 
   %57
-  bes,4  bes'8 aes4 bes8 f4 aes8 des,4 ees8 |
-  bes4  bes'8 aes4 bes8 f4 f8\mf\< aes4 bes8~ |
+  <<
+    { r4      bes8  r4     bes8  r4 aes8 des,4 ees8 }\\
+    { bes4\mf r8    aes'4  r8    f4 r8   des4  ees8 }
+  >> |
+  <<
+    {r4     bes'8 r4   bes8 r4}\\
+    {bes,4  r8    aes'4 r8   f4}
+  >>  f8\mf\< aes4 bes8~ |
   bes4 f8 aes4 bes8~ bes4 f8 aes4 bes8~ |
   bes4 f8 aes4 bes8~ bes4 f8\ff\! aes4. |
   bes1. |
@@ -1189,7 +1207,7 @@ scoreparts =   <<
     opus= \BuyMeCoffee
     meter = \Github
     poet = \CCLogo
-    subtitle = "Tuba"
+    subtitle = "Tuba 1 & 2"
   }
   \paper {
     #(set-paper-size "letter")
