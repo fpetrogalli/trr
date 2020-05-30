@@ -969,6 +969,14 @@ percussionPart = \new DrumStaff  {
   >>
 }
 
+percussionPartWithMarkings = \new DrumStaff {
+  <<
+    \new DrumVoice {\snare}
+    \new DrumVoice {<<\basedrum \markings>>}
+  >>
+
+}
+
 drumkitPart = \new DrumStaff {
   <<
     \new DrumVoice {\hihat}
@@ -1190,6 +1198,36 @@ scoreparts =   <<
   }
   \score {
     \tubaWithMarkings
+    \layout {  \set countPercentRepeats = ##t}
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% percussions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\book{
+  \bookOutputName "trr-percussions"
+  \header {
+    dedication = \Dedication
+    title = \Title
+    composer = \Composer
+    arranger = \Arranger
+    copyright = \Copyright
+    opus= \BuyMeCoffee
+    meter = \Github
+    poet = \CCLogo
+    subtitle = "Percussions"
+  }
+  \paper {
+    #(set-paper-size "letter")
+    ragged-last-bottom = ##f
+    ragged-bottom = ##f
+  }
+  \score {
+    <<
+      \drumkitPart
+      \percussionPartWithMarkings
+    >>
     \layout {  \set countPercentRepeats = ##t}
   }
 }
