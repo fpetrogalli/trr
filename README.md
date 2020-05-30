@@ -4,7 +4,8 @@
 to the band [Blowcomotion](https://blowcomotion.org/).
 
 The main theme has been invented by my son Olmo, during an
-improvisation section at home. It was a lot of fun!
+[improvisation section at home](https://youtu.be/b3wp3aPviQs). It was
+a lot of fun!
 
 You can listen to the MIDI output of the song on
 [soundcloud](https://soundcloud.com/francesco-petrogalli/the-rhino-run).
