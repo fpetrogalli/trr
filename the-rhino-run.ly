@@ -1016,27 +1016,27 @@ scoreparts =   <<
     \drumkitPart
     \percussionPart
   >>
-  \new Devnull \with {
-    \consists Drum_note_performer
-    \consists Staff_performer
-    \consists Dynamic_performer
-    midiInstrument = #"woodblock"
-  } \drummode {
-    <>\ff \repeat unfold 83 {wbh4. trim4. trim4. trim4.}
-  }
 >>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MIDI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \score {
-  \unfoldRepeats \scoreparts
+  <<
+    { \unfoldRepeats \scoreparts }
+    \new Devnull \with {
+      \consists Drum_note_performer
+      \consists Staff_performer
+      \consists Dynamic_performer
+      midiInstrument = #"woodblock"
+    } \drummode {
+      <>\ff \repeat unfold 83 {wbh4. trim4. trim4. trim4.}
+    }
+  >>
   \midi {
     \tempo 4.=140
   }
 }
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Conductor score
