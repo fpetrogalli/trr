@@ -1024,12 +1024,9 @@ scoreparts =   <<
 \score {
   <<
     { \unfoldRepeats \scoreparts }
-    \new Devnull \with {
-      \consists Drum_note_performer
-      \consists Staff_performer
-      \consists Dynamic_performer
+    \new Staff \with {
       midiInstrument = #"woodblock"
-    } \drummode {
+    } \drums {
       <>\ff \repeat unfold 83 {wbh4. trim4. trim4. trim4.}
     }
   >>
