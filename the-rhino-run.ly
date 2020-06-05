@@ -1022,13 +1022,18 @@ scoreparts =   <<
 % MIDI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \score {
-  \unfoldRepeats \scoreparts
+  <<
+    { \unfoldRepeats \scoreparts }
+    \new Staff \with {
+      midiInstrument = #"woodblock"
+    } \drums {
+      <>\ff \repeat unfold 83 {wbh4. trim4. trim4. trim4.}
+    }
+  >>
   \midi {
     \tempo 4.=140
   }
 }
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Conductor score
