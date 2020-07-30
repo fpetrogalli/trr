@@ -33,7 +33,7 @@ CC-BY-SA 4.0.
 To build PDF and MIDI output:
 
 ```
-$> lilypond the-rhino-run.ly
+$> make
 ```
 
 # Music sheets

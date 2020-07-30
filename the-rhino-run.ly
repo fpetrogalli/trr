@@ -1039,7 +1039,7 @@ scoreparts =   <<
 % Conductor score
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \book {
-  \bookOutputName "trr-conductor-score"
+  \bookOutputName "the-rhino-run"
   \header {
     dedication = \Dedication
     title = \Title
