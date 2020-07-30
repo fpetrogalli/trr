@@ -47,4 +47,4 @@ Made with [lilypond](http://lilypond.org/),
 [Frescobaldi](https://www.frescobaldi.org),
 [wildimidi](https://github.com/Mindwerks/wildmidi), a [Raspberry Pi
 4](https://www.raspberrypi.org/), and a monitor stand made of bricks
-produced by the world leading company of bricks!"
+produced by the world leading company of bricks!
